@@ -7,189 +7,199 @@
     <title>Сайт природы</title>
 </head>
 <body>
-    <header>
-        <div class="header__nav">
-            <div class="logo__container">
-                <img src="./images/bear-logo.png" alt="Логотип">
-                <span>WHH</span>
+    <header class="header" id="home">
+        <div class="header__container">
+            <div class="header__logo">
+                <img src="./images/bear-logo.png" alt="Логотип" class="header__logo-img">
+                <span class="header__logo-text">WHH</span>
             </div>
 
-            <nav class="menu">
-                <ul>
-                    <li><a href="#">Наша работа</a></li>
-                    <li><a href="#">Сообщество</a></li>
-                    <li><a href="#">О нас</a></li>
+            <button class="header__burger" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="header__overlay"></div>
+
+            <nav class="header__nav" id="headerNav">
+                <ul class="header__list">
+                    <li class="header__item"><a href="#mission" class="header__link">Наша работа</a></li>
+                    <li class="header__item"><a href="#features" class="header__link">Сообщество</a></li>
+                    <li class="header__item"><a href="#about" class="header__link">О нас</a></li>
                 </ul>
             </nav>
 
-            <button class="btn">Начать помогать</button>
+            <button class="button">Начать помогать</button>
         </div>
  
-        <div class="head__wrapper">
-            <h1>Сохраним природу вместе</h1>
-            <p>Защитим природу и животных — наше будущее зависит от нас!</p>
-            <img src="./images/bear.jpg" alt="Медведь">
-            <button class="help-button">Помощь</button>
+        <div class="hero">
+            <h1 class="hero__title">Сохраним природу вместе</h1>
+            <p class="hero__text">Защитим природу и животных — наше будущее зависит от нас!</p>
+            <img src="./images/bear.jpg" alt="Медведь" class="hero__image">
+            <button class="hero__button">Помощь</button>
         </div>
     </header>
 
     <main>
-        <section class="wolf__section">
-            <div class="wolf__img">
-                <img src="./images/Wolf.jpg" alt="Волк">
+        <section class="mission" id="mission">
+            <div class="mission__image-wrapper">
+                <img src="./images/Wolf.jpg" alt="Волк" class="mission__image">
             </div>
               
-            <div class="wolf__content">
-                <h2 class="mission-title">Наша миссия — охранять и восстанавливать природные экосистемы обеспечивая устойчивое будущее для планеты и её обитателей.</h2>
-                <p class="mission-text">Мы стремимся создавать и поддерживать инициативы, направленные на сохранение биоразнообразия, минимизацию экологического воздействия и повышение осведомленности общественности о важности защиты окружающей среды. Работая совместно с партнёрами и местными сообществами, мы обеспечиваем долговременное сохранение планеты и её уникальных экосистем для будущих поколений.</p>
-                <button class="help-btn">Начать помогать прямо сейчас</button>
+            <div class="mission__content">
+                <h2 class="mission__title">Наша миссия — охранять и восстанавливать природные экосистемы обеспечивая устойчивое будущее для планеты и её обитателей.</h2>
+                <p class="mission__text">Мы стремимся создавать и поддерживать инициативы, направленные на сохранение биоразнообразия, минимизацию экологического воздействия и повышение осведомленности общественности о важности защиты окружающей среды. Работая совместно с партнёрами и местными сообществами, мы обеспечиваем долговременное сохранение планеты и её уникальных экосистем для будущих поколений.</p>
+                <button class="button mission__button">Начать помогать прямо сейчас</button>
             </div>
         </section>
         
-        <section class="description__section">
-            <div class="card__container">
-                <div class="card">
-                    <span>50 000 га</span>
-                    <p>Площадь восстановленных лесов</p>
+        <section class="stats" id="community">
+            <div class="stats__container">
+                <div class="stats__card">
+                    <span class="stats__value">50 000 га</span>
+                    <p class="stats__label">Площадь восстановленных лесов</p>
                 </div>
-                <div class="card">
-                    <span>150+</span>
-                    <p>Количество реализованных проектов</p>
+                <div class="stats__card">
+                    <span class="stats__value">150+</span>
+                    <p class="stats__label">Количество реализованных проектов</p>
                 </div>
-                <div class="card">
-                    <span>2 000+</span>
-                    <p>Число спасённых животных</p>
+                <div class="stats__card">
+                    <span class="stats__value">2 000+</span>
+                    <p class="stats__label">Число спасённых животных</p>
                 </div>
-                <div class="card">
-                    <span>5 000+</span>
-                    <p>Количество волонтёров</p>
+                <div class="stats__card">
+                    <span class="stats__value">5 000+</span>
+                    <p class="stats__label">Количество волонтёров</p>
                 </div>
             </div>
         </section>
 
-        <section class="animal_section">
-            <div class="img__container">
-                <img src="./images/tiger.jpg" alt="Тигр">
-                <img src="./images/fox.webp" alt="Лиса">
+        <section class="features" id="features">
+            <div class="features__images">
+                <img src="./images/tiger.jpg" alt="Тигр" class="features__img">
+                <img src="./images/fox.webp" alt="Лиса" class="features__img">
             </div>
 
-            <div class="animal__description">
-                <div class="animal__header">
-                    <h2>Как мы работаем?</h2>
-                    <p>Для нас самое главное — сохранение и восстановление природных экосистем, защита дикой природы и поддержание биоразнообразия, чтобы обеспечить устойчивое будущее для планеты и её обитателей.</p>
+            <div class="features__content">
+                <div class="features__header">
+                    <h2 class="features__title">Как мы работаем?</h2>
+                    <p class="features__text">Для нас самое главное — сохранение и восстановление природных экосистем, защита дикой природы и поддержание биоразнообразия, чтобы обеспечить устойчивое будущее для планеты и её обитателей.</p>
                 </div>
 
-                <div class="animal_cards">
-                    <div class="animal_card">
-                        <p>Разрабатываем проекты по охране окружающей среды</p>
-                        <img src="./images/arrows.png" alt="Стрелка">
+                <div class="features__cards">
+                    <div class="features__card">
+                        <p class="features__card-text">Разрабатываем проекты по охране окружающей среды</p>
+                        <img src="./images/arrows.png" alt="Стрелка" class="features__card-icon">
                     </div>
-                    <div class="animal_card">
-                        <p>Проводим научные исследования экосистем</p>
-                        <img src="./images/arrows.png" alt="Стрелка">
+                    <div class="features__card">
+                        <p class="features__card-text">Проводим научные исследования экосистем</p>
+                        <img src="./images/arrows.png" alt="Стрелка" class="features__card-icon">
                     </div>
-                    <div class="animal_card">
-                        <p>Организуем программы по защите природы.</p>
-                        <img src="./images/arrows.png" alt="Стрелка">
+                    <div class="features__card">
+                        <p class="features__card-text">Организуем программы по защите природы.</p>
+                        <img src="./images/arrows.png" alt="Стрелка" class="features__card-icon">
                     </div>
-                    <div class="animal_card">
-                        <p>Работаем с бизнесом для эффективных решений</p>
-                        <img src="./images/arrows.png" alt="Стрелка">
+                    <div class="features__card">
+                        <p class="features__card-text">Работаем с бизнесом для эффективных решений</p>
+                        <img src="./images/arrows.png" alt="Стрелка" class="features__card-icon">
                     </div>
-                    <div class="animal_card">
-                        <p>Привлекаем волонтёров для участия в проектах</p>
-                        <img src="./images/arrows.png" alt="Стрелка">
+                    <div class="features__card">
+                        <p class="features__card-text">Привлекаем волонтёров для участия в проектах</p>
+                        <img src="./images/arrows.png" alt="Стрелка" class="features__card-icon">
                     </div>
-                    <div class="animal_card">
-                        <p>Обеспечиваем финансирование через пожертвования</p>
-                        <img src="./images/arrows.png" alt="Стрелка">
+                    <div class="features__card">
+                        <p class="features__card-text">Обеспечиваем финансирование через пожертвования</p>
+                        <img src="./images/arrows.png" alt="Стрелка" class="features__card-icon">
                     </div>
-                    <div class="animal_card">
-                        <p>Регулярно публикуем отчёты о деятельности</p>
-                        <img src="./images/arrows.png" alt="Стрелка">
+                    <div class="features__card">
+                        <p class="features__card-text">Регулярно публикуем отчёты о деятельности</p>
+                        <img src="./images/arrows.png" alt="Стрелка" class="features__card-icon">
                     </div>
                 </div>
             </div>
         </section>
         
-        <section class="lion_section">
-            <img src="./images/Lion.jpeg" alt="Лев">
-            <h2>Каждая помощь очень важна</h2>
-            <p>Ваш донат имеет огромное значение для нашей работы. Он позволяет нам реализовывать проекты по охране природы, восстанавливать экосистемы и защищать животных. Благodаря вашей поддержке мы можем проводить научные исследования, создавать образовательные программы и расширять наше влияние.</p>
-            <button class="btn-help">Хочу начать помогать прямо сейчас</button>
+        <section class="cta" id="about">
+            <img src="./images/Lion.jpeg" alt="Лев" class="cta__image">
+            <h2 class="cta__title">Каждая помощь очень важна</h2>
+            <p class="cta__text">Ваш донат имеет огромное значение для нашей работы. Он позволяет нам реализовывать проекты по охране природы, восстанавливать экосистемы и защищать животных. Благодаря вашей поддержке мы можем проводить научные исследования, создавать образовательные программы и расширять наше влияние.</p>
+            <button class="button cta__button">Хочу начать помогать прямо сейчас</button>
         </section>
     </main>
 
-    <footer class="footer__container">
+    <footer class="footer">
         <div class="footer__top">
             <div class="footer__column">
-                <h3>Природа</h3>
-                <ul>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Наши проекты</a></li>
-                    <li><a href="#">Восстановление экосистем</a></li>
-                    <li><a href="#">Исследования</a></li>
-                    <li><a href="#">Экологические инициативы</a></li>
+                <h3 class="footer__column-title">Природа</h3>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">О нас</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Наши проекты</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Восстановление экосистем</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Исследования</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Экологические инициативы</a></li>
                 </ul>
             </div>
 
             <div class="footer__column">
-                <h3>Животные</h3>
-                <ul>
-                    <li><a href="#">Защита видов</a></li>
-                    <li><a href="#">Спасение животных</a></li>
-                    <li><a href="#">Программы по охране</a></li>
-                    <li><a href="#">Успешные истории</a></li>
-                    <li><a href="#">Волонтёрская работа</a></li>
+                <h3 class="footer__column-title">Животные</h3>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">Защита видов</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Спасение животных</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Программы по охране</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Успешные истории</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Волонтёрская работа</a></li>
                 </ul>
             </div>
 
             <div class="footer__column">
-                <h3>Контакты</h3>
-                <ul>
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="#">Обратная связь</a></li>
-                    <li><a href="#">Поддержка и донаты</a></li>
-                    <li><a href="#">Партнёрство</a></li>
-                    <li><a href="#">Социальные сети</a></li>
+                <h3 class="footer__column-title">Контакты</h3>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Обратная связь</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Поддержка и донаты</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Партнёрство</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Социальные сети</a></li>
                 </ul>
             </div>
 
-            <div class="footer__column footer__subscribe">
-                <h3>Подпишитесь на новости</h3>
+            <div class="footer__column footer__column--subscribe">
+                <h3 class="footer__column-title">Подпишитесь на новости</h3>
 
-                <div class="subscribe__form">
-                    <input type="email" placeholder="Введите ваш почтовый адрес">
-                    <label class="checkbox__label">
-                      <input type="checkbox" name="personal-data">
-                      <span>Согласен с обработкой персональных данных</span>
+                <form class="subscribe">
+                    <input type="email" placeholder="Введите ваш почтовый адрес" class="subscribe__input">
+                    <label class="subscribe__checkbox-label">
+                        <input type="checkbox" name="personal-data" class="subscribe__checkbox">
+                        <span class="subscribe__checkbox-text">Согласен с обработкой персональных данных</span>
                     </label>
-                    <div class="social__buttons">
-                        <button>VK</button>
-                        <button>TELEGRAM</button>
-                        <button>INSTAGRAMM</button>
+                    <div class="subscribe__socials">
+                        <button class="subscribe__social-btn">VK</button>
+                        <button class="subscribe__social-btn">TELEGRAM</button>
+                        <button class="subscribe__social-btn">INSTAGRAMM</button>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
  
         <div class="footer__bottom">
             <div class="footer__logo">
-                <img src="./images/bear-logo.png" alt="Логотип панды">
-                <span>WHH</span>
+                <img src="./images/bear-logo.png" alt="Логотип" class="footer__logo-img">
+                <span class="footer__logo-text">WHH</span>
             </div>
 
             <div class="footer__info">
-                <p>Адрес: ул. Примерная, 123, офис 456, Москва, Россия, 10000</p>
-                <p>Телефон: +7 (123) 456-78-90</p>
-                <p>Электронная почта: info@whh.org</p>
+                <p class="footer__info-item">Адрес: ул. Примерная, 123, офис 456, Москва, Россия, 10000</p>
+                <p class="footer__info-item">Телефон: +7 (123) 456-78-90</p>
+                <p class="footer__info-item">Электронная почта: info@whh.org</p>
             </div>
 
             <div class="footer__credits">
-                <p>Design by Robin | Coded by Yasin</p>
-                <p>© 2024 WHH — Защита природы и дикой фауны для устойчивого будущего</p>
+                <p class="footer__credits-text">Design by Robin | Coded by Yasin</p>
+                <p class="footer__credits-text">© 2024 WHH — Защита природы и дикой фауны для устойчивого будущего</p>
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
